@@ -1,0 +1,143 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Edit(**)",
+      "MultiEdit(**)",
+      "Write(**)",
+      "Glob(**)",
+      "Grep(**)",
+      "WebSearch(**)",
+      "WebFetch(**)",
+      "TodoRead()",
+      "TodoWrite(**)",
+      "Task(**)",
+
+      "Bash(git *)",
+      "Bash(gh *)",
+
+      "Bash(ls*)",
+      "Bash(cat *)",
+      "Bash(head*)",
+      "Bash(tail*)",
+      "Bash(grep*)",
+      "Bash(rg*)",
+      "Bash(find*)",
+      "Bash(tree*)",
+      "Bash(pwd*)",
+      "Bash(wc*)",
+      "Bash(diff *)",
+      "Bash(which*)",
+      "Bash(type*)",
+
+      "Bash(node*)",
+      "Bash(npm*)",
+      "Bash(npx*)",
+      "Bash(yarn*)",
+      "Bash(pnpm*)",
+      "Bash(bun*)",
+
+      "Bash(eslint*)",
+      "Bash(prettier*)",
+      "Bash(tsc*)",
+      "Bash(jest*)",
+      "Bash(vitest*)",
+
+      "Bash(mkdir*)",
+      "Bash(touch*)",
+      "Bash(cp*)",
+      "Bash(mv*)",
+      "Bash(chmod [0-7][0-7][0-7]:*)",
+
+      "Bash(echo*)",
+      "Bash(printf*)",
+      "Bash(date*)",
+      "Bash(whoami*)",
+      "Bash(env*)",
+
+      "Bash(open*)",
+      "Bash(pbcopy*)",
+      "Bash(pbpaste*)",
+
+      "Bash(code*)",
+      "Bash(cursor*)",
+      "Bash(claude *)",
+
+      "Bash(next *)",
+      "Bash(tailwindcss *)",
+      "Bash(figma-*)",
+      "Bash(shadcn*)",
+
+      "mcp__*"
+    ],
+    "deny": [
+      "Bash(rm*)",
+      "Bash(rmdir*)",
+
+      "Bash(curl*)",
+      "Bash(wget*)",
+      "Bash(nc*)",
+      "Bash(netcat*)",
+      "Bash(telnet*)",
+      "Bash(ssh*)",
+      "Bash(scp*)",
+      "Bash(sftp*)",
+      "Bash(rsync*)",
+
+      "Bash(kill*)",
+      "Bash(pkill*)",
+      "Bash(killall*)",
+
+      "Bash(sudo *)",
+
+      "Bash(chmod 777*)",
+      "Bash(dd*)",
+      "Bash(mkfs*)",
+      "Bash(fdisk*)",
+      "Bash(format*)",
+      "Bash(shutdown*)",
+      "Bash(reboot*)",
+      "Bash(halt*)",
+      "Bash(init*)",
+
+      "Read(.env*)",
+      "Read(**/.env*)",
+      "Read(secrets/**)",
+      "Read(**/*secret*)",
+      "Read(**/*password*)",
+      "Read(**/*token*)",
+      "Read(**/.ssh/**)",
+      "Read(**/.aws/**)",
+      "Read(**/.config/**/credentials)",
+
+      "Write(.env*)",
+      "Write(**/.env*)",
+      "Write(secrets/**)",
+      "Write(**/*secret*)",
+      "Write(**/*password*)",
+      "Write(**/*token*)",
+      "Write(**/.ssh/**)",
+      "Write(**/.aws/**)"
+    ],
+    "ask": [
+      "Bash(git push*)",
+      "Bash(git commit*)",
+      "Bash(npm publish*)",
+      "Bash(yarn publish*)",
+      "Bash(pnpm publish*)",
+      "Bash(npm install --global*)",
+      "Bash(npm i -g*)",
+      "Bash(yarn global*)",
+      "Bash(pnpm add --global*)"
+    ]
+  },
+  "tools": {
+    "bash": {
+      "timeout": 60000,
+      "working_directory_policy": "maintain"
+    }
+  },
+  "model": "sonnet",
+  "description": "Settings for shadcn/ui + Next.js + Figma Code Connect project development"
+}
